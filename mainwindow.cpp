@@ -28,9 +28,11 @@ MainWindow::MainWindow(QWidget *parent)
     // Buttons
     QVBoxLayout *layout = new QVBoxLayout;
 
-    for (int i = 0; i < 30; ++i){
+    QString ban[9] = {"Kanobu", "QtCanobu", "Canobu", "QtSCP", "QtGithub", "QtTwitter", "Ban", "Ban", "Ban"};
+
+    for (int i = 0; i < 9; ++i){
         QPushButton *btn = new QPushButton();
-        btn->setText("\nban\n");
+        btn->setText("\n\n\n\n" + ban[i] + "\n\n\n\n");
         layout->addWidget(btn);
     }
 
